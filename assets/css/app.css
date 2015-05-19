@@ -1,0 +1,281 @@
+#wrap {
+  background: transparent url("../img/home_header_background_alt.png") left bottom no-repeat;
+}
+
+#free-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 120px;
+  background: transparent url("../img/free_ribbon.png") left -10px no-repeat;
+}
+
+#header {
+  position: relative;
+  padding: 10px 0 15px;
+}
+body.home #header {
+  padding-bottom: 40px;
+}
+  #header #logo {
+    margin-left: 80px;
+    width: 275px;
+    height: 80px;
+    text-indent: -9999px;
+    background: transparent url("../img/logo_type.png") left center no-repeat;
+  }
+    #header #logo a,
+    #header #logo a:visited {
+      color: whitesmoke;
+      text-shadow: 0 0 2px rgba(255,255,255,0.6);
+      -webkit-transition: all .2s linear;
+         -moz-transition: all .2s linear;
+              transition: all .2s linear;
+    }
+    #header #logo a:hover {
+      color: white;
+      text-decoration: none;
+      text-shadow: 0 0 5px rgba(255,255,255,0.6);
+    }
+
+  #header nav#menu {
+    position: absolute;
+    top: 50px;
+    left: 460px;
+  }
+    #header nav#menu a {
+      display: inline-block;
+      width: 150px;
+      height: 64px;
+      text-indent: -9999px;
+      opacity: 0.8;
+      background: transparent left top no-repeat;
+      background-size: 100%;
+    }
+    #header nav#menu a:hover {
+      opacity: 1.0;
+    }
+    #header nav#menu a#home {
+      background-image: url("../img/home.png");
+    }
+    #header nav#menu a#blog {
+      background-image: url("../img/appunti.png");
+    }
+    #header nav#menu a#team {
+      background-image: url("../img/team.png");
+    }
+
+#devices {
+  z-index: 10;
+  position: absolute;
+}
+
+#hero {
+  color: white;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  margin-left: 500px; /* offset6 */
+  padding-top: 40px;
+}
+  #hero h2 {
+    font-weight: 200;
+  }
+  #hero a:hover {
+    text-decoration: none;
+  }
+  #hero #badges {
+    float: left;
+  }
+    #hero #badges a {
+      margin-right: 20px;
+    }
+  #hero #social {
+    float: left;
+    padding-top: 3px;
+  }
+  #hero #teaser {
+    clear: left;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+#content {
+  position: relative;
+  z-index: 100;
+  padding-top: 20px;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+body.home #content {
+  position: inherit;
+  z-index: inherit;
+  background: transparent;
+  border-top: 0;
+}
+
+#press {
+  padding-top: 40px;
+}
+
+#articles {
+  padding: 20px 0 0;
+}
+
+#features {
+  background-color: white;
+}
+
+#footer {
+  position: relative;
+  z-index: 100;
+  padding-bottom: 10px;
+  background-color: white;
+}
+  #footer a {
+    padding: 0 0 0 20px;
+  }
+
+.align-center {
+  text-align: center;
+}
+
+.avatar {
+  margin-right: 10px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+  article hr {
+    display: block;
+    width: 100%;
+    height: 80px;
+    border: 0;
+    background: transparent url("../img/hr.png") center top no-repeat;
+  }
+
+.entry-title a,
+.entry-title a:visited {
+  color: #666;
+}
+.entry-title a:hover {
+  color: #333;
+}
+
+span.label a,
+span.label a:visited {
+  color: white;
+}
+span.label a:hover {
+  text-decoration: none;
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  #header #logo {
+    margin-left: 40px;
+  }
+  #header nav#menu {
+    left: 365px;
+  }
+    #header nav#menu a {
+      width: 75px;
+      height: 32px;
+    }
+  #devices {
+    position: relative;
+    text-align: center;
+  }
+  #hero {
+    margin-left: 20px;
+  }
+    #hero #badges {
+      float: none;
+    }
+    #hero #social {
+      float: none;
+      padding-top: 20px;
+    }
+  #press {
+    padding-top: 20px;
+  }
+}
+
+/* Portrait & Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  body {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+    #header {
+      padding: 0 20px 20px;
+    }
+      #header #logo {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #header nav#menu {
+        position: static;
+        text-align: center;
+      }
+        #header nav#menu a {
+          width: 150px;
+          height: 64px;
+        }
+      #devices {
+        position: relative;
+        text-align: center;
+      }
+      #hero {
+        margin-left: 0;
+      }
+        #hero #badges a {
+          display: block;
+          margin: 0 auto 10px;
+        }
+        #hero #social {
+          clear: left;
+        }
+    #content {
+      padding: 0 20px;
+    }
+      #press {
+        padding-top: 20px;
+      }
+      #colophon .clear {
+        clear: left;
+      }
+    #footer {
+      text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+  body {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  #header {
+    padding: 0 20px 20px;
+  }
+  #hero #badges a {
+    display: block;
+    margin: 0 auto 10px;
+  }
+  #hero #social {
+    clear: left;
+  }
+    #content {
+      padding: 0 20px;
+    }
+      #press {
+        padding-top: 20px;
+      }
+      #colophon .clear {
+        clear: left;
+      }
+    #footer {
+      text-align: center;
+    }
+}
